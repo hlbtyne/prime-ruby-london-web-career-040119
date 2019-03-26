@@ -1,6 +1,6 @@
 def prime?(number)
-  range = 2..number
-  .each do |n|
+  array = (2..number).to_a
+  array.each do |n|
     return false if number % n == 0
   end
   true
